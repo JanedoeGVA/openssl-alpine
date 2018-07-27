@@ -3,6 +3,8 @@ FROM alpine
 RUN apk add --update openssl && \
 rm -rf /var/cache/apk*
 
-COPY script.sh /
+COPY docker-entrypoint.sh /
 
-ENTRYPOINT ["/script.sh"]
+RUN ["chmod", "+x", "/docker-entrypoint.sh"]
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
