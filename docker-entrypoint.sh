@@ -1,4 +1,5 @@
 #!/bin/sh
+chmod a+w $DHPARAM
 
 if [ ! -f $DHPARAM]; then
     echo -e "not present, creating dh-param im secret volume"
