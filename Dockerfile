@@ -1,9 +1,8 @@
 FROM alpine
 
-RUN apk add --no-cache openssl
+RUN apk add --update openssl && \
+rm -rf /var/cache/apk*
 
 COPY script.sh /
-
-RUN chmod +x /script.sh
 
 ENTRYPOINT ["/script.sh"]
