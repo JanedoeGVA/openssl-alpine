@@ -1,7 +1,7 @@
 FROM alpine
 
-COPY docker-entrypoint.sh /run/script/docker-entrypoint.sh
+COPY script.sh /script/script.sh
 
-RUN ["chmod", "+x", "/run/script/docker-entrypoint.sh"]
+RUN chmod +x /script/script.sh
 
-ENTRYPOINT ["/run/script/docker-entrypoint.sh"]
+CMD ["./script/script.sh"]
