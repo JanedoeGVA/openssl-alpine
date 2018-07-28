@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 chmod a+w /etc/ssl/dh-param
 
 #if [ ! -f $DHPARAM]; then
