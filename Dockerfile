@@ -7,4 +7,6 @@ COPY script.sh /script/script.sh
 
 RUN chmod +x /script/script.sh
 
+CMD tail -f /dev/null
+
 CMD ["./script/script.sh"]
