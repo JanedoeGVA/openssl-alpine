@@ -1,5 +1,4 @@
 #!/bin/sh
-#chmod a+w $DH_PARAM_PATH
 
 if [ ! -f "$DH_PARAM_PATH/test2.txt"] 
 then
@@ -9,3 +8,5 @@ then
 else 
     echo "present !!!"
 fi
+
+sleep 50m
