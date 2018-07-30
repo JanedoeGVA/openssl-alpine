@@ -1,5 +1,5 @@
 #!/bin/sh
-chmod a+w $DH_PARAM_PATH
+#chmod a+w $DH_PARAM_PATH
 
 if [ ! -f $DH_PARAM_PATH/test2.txt]; then
     echo -e "not present, creating dh-param im secret volume"
