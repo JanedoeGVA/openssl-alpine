@@ -6,11 +6,6 @@
 [ ! -f $DH_PARAM_PATH/test3.txt ] || echo "File test3.txt found!"
 echo $DH_PARAM_PATH/test2.txt
 
-#if [ -f /etc/ssl/dh-param/test2.txt]; then
-    #echo -e "text 2 not present, creating it"
-    #touch /etc/ssl/dh-param/test2.txt
-#fi
-
 bool=true
 
 if [ "$bool" = true ]; then
@@ -20,6 +15,7 @@ fi
 if [ ! -f $DH_PARAM_PATH/test3.txt ]; then
  echo -e "IS NOT !!!"
  echo -e "creating"
+ touch $DH_PARAM_PATH/test3.txt
 fi
 
 sleep 50m
