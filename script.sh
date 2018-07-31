@@ -17,4 +17,11 @@ if [ "$bool" = true ]; then
  echo -e "true"
 fi
 
+if [ ! -f $DH_PARAM_PATH/test3.txt ]; then
+ echo -e "IS NOT !!!"
+ echo -e "creating"
+fi
+
 sleep 50m
+
+
