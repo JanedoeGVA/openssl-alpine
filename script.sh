@@ -1,12 +1,12 @@
 #!/bin/sh
 
-if [ ! -f "$DH_PARAM_PATH/test2.txt"] 
+if [ ! -f /etc/ssl/dh-param/test2.txt] 
 then
     echo -e "not present, creating dh-param im secret volume"
-    touch $DH_PARAM_PATH/test2.txt
+    touch /etc/ssl/dh-param/test2.txt
     #openssl dhparam -out $DH_PARAM_PATH/dhparam-2048.pem 2048
 else 
-    echo cat $DH_PARAM_PATH/test2.txt
+    cat $DH_PARAM_PATH/test2.txt
     echo "present !!!"
 fi
 
