@@ -1,8 +1,8 @@
 #!/bin/sh
 
-[ -f $DH_PARAM_PATH/text2.txt ] || echo "File not found!"
-[ -f $DH_PARAM_PATH/text3.txt ] || echo "File not found!"
-echo $DH_PARAM_PATH/text2.txt
+[ -f $DH_PARAM_PATH/test2.txt ] || echo "File not found!"
+[ -f $DH_PARAM_PATH/test3.txt ] || echo "File not found!"
+echo $DH_PARAM_PATH/test2.txt
 
 if [ ! -f /etc/ssl/dh-param/test2.txt]; then
     echo -e "text 2 not present, creating it"
