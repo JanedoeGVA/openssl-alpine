@@ -11,7 +11,9 @@ echo $DH_PARAM_PATH/test2.txt
     #touch /etc/ssl/dh-param/test2.txt
 #fi
 
-if [TRUE]; then
+bool=true
+
+if [ "$bool" = true ]; then
  echo -e "true"
 fi
 
